@@ -1,10 +1,13 @@
 const repeatString = function(str,n) {
-let repeatString='';
-    for(let i=0;i<=str.length-1;i++){
-repeatString+=str;
+    if(n<0){
+        return "ERROR"
     }
-    return repeatString;
-};
+    let repeatString='';
+        for(let i=0;i<n;i++){
+    repeatString+=str;
+        }
+        return repeatString;
+    };
 
 // Do not edit below this line
 module.exports = repeatString;
